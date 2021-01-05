@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simple physics Engine:  Fichier source de C:/Users/arnau/Documents/Data/Dev/SimplePhysicsEngine_Basecode_Part2/SimplePhysicsEngine/window.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simple physics Engine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6ff16dbf211f70f9e46f3c182aff425b.html">SimplePhysicsEngine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">window.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="window_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef _WINDOW_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define _WINDOW_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="renderer_8h.html">renderer.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;SDL.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define WINDOW_WIDTH  1280</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define WINDOW_HEIGHT 720</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_window__s.html">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_window__s.html">Window_s</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="group___window.html#ga106712b518b00b5531093b2fa8a66a53">   24</a></span>&#160;    SDL_Window  *<a class="code" href="group___window.html#ga106712b518b00b5531093b2fa8a66a53">m_windowSDL</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="group___window.html#ga2f05c841e8180abc57fceb224b19df0a">   27</a></span>&#160;    <a class="code" href="struct_renderer__s.html">Renderer</a> *<a class="code" href="group___window.html#ga2f05c841e8180abc57fceb224b19df0a">m_renderer</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="group___window.html#ga12550b98e76bc1215d87d30bf15ece81">   28</a></span>&#160;} <a class="code" href="group___window.html#ga12550b98e76bc1215d87d30bf15ece81">Window</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="struct_window__s.html">Window</a> *<a class="code" href="group___window.html#gaa89915d8341af76c114e04808d9de800">Window_new</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___window.html#ga02c4ebe92c5d6690a47037bb3ee0f170">Window_free</a>(<a class="code" href="struct_window__s.html">Window</a> * window);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="struct_renderer__s.html">Renderer</a> *<a class="code" href="group___window.html#ga5a37325a2ffab13dba7f6e4df70a6c39">Window_getRenderer</a>(<a class="code" href="struct_window__s.html">Window</a> *window);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___window.html#gaac4e6aa1ca3902764b7af44c0b00230f">SDL_init</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___window.html#ga10ecf1aa16f2f06acd2b90db4b819795">SDL_quit</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup___window_html_ga5a37325a2ffab13dba7f6e4df70a6c39"><div class="ttname"><a href="group___window.html#ga5a37325a2ffab13dba7f6e4df70a6c39">Window_getRenderer</a></div><div class="ttdeci">Renderer * Window_getRenderer(Window *window)</div><div class="ttdoc">Renvoie le moteur de rendu associé à la fenêtre.</div><div class="ttdef"><b>Definition:</b> window.c:84</div></div>
+<div class="ttc" id="agroup___window_html_ga2f05c841e8180abc57fceb224b19df0a"><div class="ttname"><a href="group___window.html#ga2f05c841e8180abc57fceb224b19df0a">Window_s::m_renderer</a></div><div class="ttdeci">Renderer * m_renderer</div><div class="ttdoc">Le moteur de rendu associé à la fenêtre.</div><div class="ttdef"><b>Definition:</b> window.h:27</div></div>
+<div class="ttc" id="agroup___window_html_ga12550b98e76bc1215d87d30bf15ece81"><div class="ttname"><a href="group___window.html#ga12550b98e76bc1215d87d30bf15ece81">Window</a></div><div class="ttdeci">struct Window_s Window</div><div class="ttdoc">Structure représentant une fenêtre SDL avec son moteur de rendu.</div></div>
+<div class="ttc" id="agroup___window_html_ga106712b518b00b5531093b2fa8a66a53"><div class="ttname"><a href="group___window.html#ga106712b518b00b5531093b2fa8a66a53">Window_s::m_windowSDL</a></div><div class="ttdeci">SDL_Window * m_windowSDL</div><div class="ttdoc">La fenêtre SDL.</div><div class="ttdef"><b>Definition:</b> window.h:24</div></div>
+<div class="ttc" id="agroup___window_html_ga10ecf1aa16f2f06acd2b90db4b819795"><div class="ttname"><a href="group___window.html#ga10ecf1aa16f2f06acd2b90db4b819795">SDL_quit</a></div><div class="ttdeci">void SDL_quit()</div><div class="ttdoc">Quitte la SDL.</div><div class="ttdef"><b>Definition:</b> window.c:102</div></div>
+<div class="ttc" id="astruct_renderer__s_html"><div class="ttname"><a href="struct_renderer__s.html">Renderer_s</a></div><div class="ttdoc">Structure représentant la moteur de rendu.</div><div class="ttdef"><b>Definition:</b> renderer.h:18</div></div>
+<div class="ttc" id="agroup___window_html_gaa89915d8341af76c114e04808d9de800"><div class="ttname"><a href="group___window.html#gaa89915d8341af76c114e04808d9de800">Window_new</a></div><div class="ttdeci">Window * Window_new(int width, int height)</div><div class="ttdoc">Crée une nouvelle fenêtre.</div><div class="ttdef"><b>Definition:</b> window.c:13</div></div>
+<div class="ttc" id="astruct_window__s_html"><div class="ttname"><a href="struct_window__s.html">Window_s</a></div><div class="ttdoc">Structure représentant une fenêtre SDL avec son moteur de rendu.</div><div class="ttdef"><b>Definition:</b> window.h:22</div></div>
+<div class="ttc" id="agroup___window_html_ga02c4ebe92c5d6690a47037bb3ee0f170"><div class="ttname"><a href="group___window.html#ga02c4ebe92c5d6690a47037bb3ee0f170">Window_free</a></div><div class="ttdeci">void Window_free(Window *window)</div><div class="ttdoc">Détruit une fenêtre préalablement allouée avec Window_new();.</div><div class="ttdef"><b>Definition:</b> window.c:65</div></div>
+<div class="ttc" id="arenderer_8h_html"><div class="ttname"><a href="renderer_8h.html">renderer.h</a></div></div>
+<div class="ttc" id="agroup___window_html_gaac4e6aa1ca3902764b7af44c0b00230f"><div class="ttname"><a href="group___window.html#gaac4e6aa1ca3902764b7af44c0b00230f">SDL_init</a></div><div class="ttdeci">int SDL_init()</div><div class="ttdoc">Initialise la SDL.</div><div class="ttdef"><b>Definition:</b> window.c:89</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simple physics Engine:  Fichier source de C:/Users/arnau/Documents/Data/Dev/SimplePhysicsEngine_Basecode_Part2/SimplePhysicsEngine/camera.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simple physics Engine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6ff16dbf211f70f9e46f3c182aff425b.html">SimplePhysicsEngine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">camera.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="camera_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef _EX_CAMERA_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define _EX_CAMERA_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="physics_8h.html">physics.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vector_8h.html">vector.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_rect__s.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_rect__s.html">Rect_s</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_rect__s.html#ad0da36b2558901e21e7a30f6c227a45e">   17</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_rect__s.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_rect__s.html#aa4f0d3eebc3c443f9be81bf48561a217">   20</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_rect__s.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_rect__s.html#a56eca241e2896b9f57a79589e76fd24b">   23</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_rect__s.html#a56eca241e2896b9f57a79589e76fd24b">w</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_rect__s.html#a85f2f1bd58b3b44ffdf3881823393959">   26</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_rect__s.html#a85f2f1bd58b3b44ffdf3881823393959">h</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="group___camera.html#gaa8cadcded7ae946572f5e28afbf373eb">   27</a></span>&#160;} <a class="code" href="group___camera.html#gaa8cadcded7ae946572f5e28afbf373eb">Rect</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<a class="code" href="struct_rect__s.html">Rect</a> <a class="code" href="group___camera.html#gac32b1ef3ac3e98ff3b5f83b541d314dc">Rect_set</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> w, <span class="keywordtype">float</span> h);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_camera__s.html">   38</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_camera__s.html">Camera_s</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="struct_rect__s.html">Rect</a> m_worldView;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> m_width;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> m_height;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">float</span> m_xScale;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">float</span> m_yScale;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">   45</a></span>&#160;} <a class="code" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="struct_camera__s.html">Camera</a> *<a class="code" href="group___camera.html#gaa7fe5091d66e78ae40537f5eec6b35a2">Camera_new</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___camera.html#ga5b0c5f54546667bdff6d3b9af2b7aea2">Camera_free</a>(<a class="code" href="struct_camera__s.html">Camera</a> *camera);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___camera.html#gac0888b4b26e7c2c24a8ffb51d3b726a3">Camera_setView</a>(<a class="code" href="struct_camera__s.html">Camera</a> *camera, <a class="code" href="struct_rect__s.html">Rect</a> *worldView);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___camera.html#gad8d7c84cf303877b55b9ca54d69de02b">Camera_getView</a>(<a class="code" href="struct_camera__s.html">Camera</a> *camera, <a class="code" href="struct_rect__s.html">Rect</a> *worldView);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___camera.html#ga2ff2a4ad73db0aa2013b437b4e1749df">Camera_zoom</a>(<a class="code" href="struct_camera__s.html">Camera</a> *camera, <a class="code" href="struct_vec2__s.html">Vec2</a> center, <span class="keywordtype">float</span> factor);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___camera.html#gaf7786bd07f26f8ce46f871205896d577">Camera_worldToView</a>(<a class="code" href="struct_camera__s.html">Camera</a> *camera, <a class="code" href="struct_vec2__s.html">Vec2</a> position, <span class="keywordtype">int</span> *x, <span class="keywordtype">int</span> *y);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___camera.html#ga052b2f94ac46afaa3e28e3e94fe797ba">Camera_viewToWorld</a>(<a class="code" href="struct_camera__s.html">Camera</a> *camera, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <a class="code" href="struct_vec2__s.html">Vec2</a> *position);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___camera.html#gac7ea9638aaeca2eb5d9f70ee5c0a9761">Camera_move</a>(<a class="code" href="struct_camera__s.html">Camera</a> *camera, <a class="code" href="struct_vec2__s.html">Vec2</a> displacement);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct_rect__s_html_a56eca241e2896b9f57a79589e76fd24b"><div class="ttname"><a href="struct_rect__s.html#a56eca241e2896b9f57a79589e76fd24b">Rect_s::w</a></div><div class="ttdeci">float w</div><div class="ttdoc">Largeur du rectangle.</div><div class="ttdef"><b>Definition:</b> camera.h:23</div></div>
+<div class="ttc" id="agroup___camera_html_ga2ff2a4ad73db0aa2013b437b4e1749df"><div class="ttname"><a href="group___camera.html#ga2ff2a4ad73db0aa2013b437b4e1749df">Camera_zoom</a></div><div class="ttdeci">void Camera_zoom(Camera *camera, Vec2 center, float factor)</div><div class="ttdoc">Réduit ou augmente la zone du monde vue par la caméra.</div><div class="ttdef"><b>Definition:</b> camera.c:57</div></div>
+<div class="ttc" id="agroup___camera_html_gac7ea9638aaeca2eb5d9f70ee5c0a9761"><div class="ttname"><a href="group___camera.html#gac7ea9638aaeca2eb5d9f70ee5c0a9761">Camera_move</a></div><div class="ttdeci">void Camera_move(Camera *camera, Vec2 displacement)</div><div class="ttdoc">Déplace la caméra.</div><div class="ttdef"><b>Definition:</b> camera.c:83</div></div>
+<div class="ttc" id="agroup___camera_html_ga5b0c5f54546667bdff6d3b9af2b7aea2"><div class="ttname"><a href="group___camera.html#ga5b0c5f54546667bdff6d3b9af2b7aea2">Camera_free</a></div><div class="ttdeci">void Camera_free(Camera *camera)</div><div class="ttdoc">Détruit une caméra préalablement allouée avec Camera_new().</div><div class="ttdef"><b>Definition:</b> camera.c:38</div></div>
+<div class="ttc" id="astruct_rect__s_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="struct_rect__s.html#ad0da36b2558901e21e7a30f6c227a45e">Rect_s::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">Abscisse du sommet en bas à gauche du rectangle.</div><div class="ttdef"><b>Definition:</b> camera.h:17</div></div>
+<div class="ttc" id="aphysics_8h_html"><div class="ttname"><a href="physics_8h.html">physics.h</a></div></div>
+<div class="ttc" id="astruct_rect__s_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="struct_rect__s.html#aa4f0d3eebc3c443f9be81bf48561a217">Rect_s::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">Ordonnée du sommet en bas à gauche du rectangle.</div><div class="ttdef"><b>Definition:</b> camera.h:20</div></div>
+<div class="ttc" id="agroup___camera_html_gaa7fe5091d66e78ae40537f5eec6b35a2"><div class="ttname"><a href="group___camera.html#gaa7fe5091d66e78ae40537f5eec6b35a2">Camera_new</a></div><div class="ttdeci">Camera * Camera_new(int width, int height)</div><div class="ttdoc">Crée une caméra.</div><div class="ttdef"><b>Definition:</b> camera.c:16</div></div>
+<div class="ttc" id="agroup___camera_html_ga052b2f94ac46afaa3e28e3e94fe797ba"><div class="ttname"><a href="group___camera.html#ga052b2f94ac46afaa3e28e3e94fe797ba">Camera_viewToWorld</a></div><div class="ttdeci">void Camera_viewToWorld(Camera *camera, int x, int y, Vec2 *position)</div><div class="ttdoc">Transforme des coordonnées exprimées dans le référentiel caméra vers le référentiel monde.</div><div class="ttdef"><b>Definition:</b> camera.c:74</div></div>
+<div class="ttc" id="agroup___camera_html_ga276fe42672bb1e37d29c704c231ff44d"><div class="ttname"><a href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a></div><div class="ttdeci">struct Camera_s Camera</div><div class="ttdoc">Structure représentant la caméra par laquelle est vue la scène.</div></div>
+<div class="ttc" id="agroup___camera_html_gac32b1ef3ac3e98ff3b5f83b541d314dc"><div class="ttname"><a href="group___camera.html#gac32b1ef3ac3e98ff3b5f83b541d314dc">Rect_set</a></div><div class="ttdeci">Rect Rect_set(float x, float y, float w, float h)</div><div class="ttdoc">Construit un rectangle.</div><div class="ttdef"><b>Definition:</b> camera.c:10</div></div>
+<div class="ttc" id="astruct_camera__s_html"><div class="ttname"><a href="struct_camera__s.html">Camera_s</a></div><div class="ttdoc">Structure représentant la caméra par laquelle est vue la scène.</div><div class="ttdef"><b>Definition:</b> camera.h:39</div></div>
+<div class="ttc" id="agroup___camera_html_gac0888b4b26e7c2c24a8ffb51d3b726a3"><div class="ttname"><a href="group___camera.html#gac0888b4b26e7c2c24a8ffb51d3b726a3">Camera_setView</a></div><div class="ttdeci">void Camera_setView(Camera *camera, Rect *worldView)</div><div class="ttdoc">Définit la zone du monde vue par la caméra.</div><div class="ttdef"><b>Definition:</b> camera.c:89</div></div>
+<div class="ttc" id="agroup___camera_html_gad8d7c84cf303877b55b9ca54d69de02b"><div class="ttname"><a href="group___camera.html#gad8d7c84cf303877b55b9ca54d69de02b">Camera_getView</a></div><div class="ttdeci">void Camera_getView(Camera *camera, Rect *worldView)</div><div class="ttdoc">Renvoie la zone du monde vue par la caméra.</div><div class="ttdef"><b>Definition:</b> camera.c:99</div></div>
+<div class="ttc" id="astruct_rect__s_html_a85f2f1bd58b3b44ffdf3881823393959"><div class="ttname"><a href="struct_rect__s.html#a85f2f1bd58b3b44ffdf3881823393959">Rect_s::h</a></div><div class="ttdeci">float h</div><div class="ttdoc">Hauteur du rectangle.</div><div class="ttdef"><b>Definition:</b> camera.h:26</div></div>
+<div class="ttc" id="avector_8h_html"><div class="ttname"><a href="vector_8h.html">vector.h</a></div></div>
+<div class="ttc" id="astruct_rect__s_html"><div class="ttname"><a href="struct_rect__s.html">Rect_s</a></div><div class="ttdoc">Structure représenant un rectangle 2D alligné sur les axes X et Y.</div><div class="ttdef"><b>Definition:</b> camera.h:15</div></div>
+<div class="ttc" id="astruct_vec2__s_html"><div class="ttname"><a href="struct_vec2__s.html">Vec2_s</a></div><div class="ttdoc">Structure représentant un vecteur 2D dont les composantes sont de type float.</div><div class="ttdef"><b>Definition:</b> vector.h:11</div></div>
+<div class="ttc" id="agroup___camera_html_gaf7786bd07f26f8ce46f871205896d577"><div class="ttname"><a href="group___camera.html#gaf7786bd07f26f8ce46f871205896d577">Camera_worldToView</a></div><div class="ttdeci">void Camera_worldToView(Camera *camera, Vec2 position, int *x, int *y)</div><div class="ttdoc">Transforme des coordonnées exprimées dans le référentiel monde vers le référentiel caméra.</div><div class="ttdef"><b>Definition:</b> camera.c:67</div></div>
+<div class="ttc" id="agroup___camera_html_gaa8cadcded7ae946572f5e28afbf373eb"><div class="ttname"><a href="group___camera.html#gaa8cadcded7ae946572f5e28afbf373eb">Rect</a></div><div class="ttdeci">struct Rect_s Rect</div><div class="ttdoc">Structure représenant un rectangle 2D alligné sur les axes X et Y.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

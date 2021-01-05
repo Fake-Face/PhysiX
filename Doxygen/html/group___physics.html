@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simple physics Engine: Physics</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simple physics Engine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Physics</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_spring__s.html">Spring_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure représentant un ressort entre une balle et son point d'attache.  <a href="struct_spring__s.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball__s.html">Ball_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure représentant une balle. Elle peut être liée à d'autres balle avec des ressorts.  <a href="struct_ball__s.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga31a83f886935080b58e4c0c44ab19ec0"><td class="memItemLeft" align="right" valign="top"><a id="ga31a83f886935080b58e4c0c44ab19ec0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_EDGES</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:ga31a83f886935080b58e4c0c44ab19ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:ga8a4ccc23c3c610230657bd1d791414f7"><td class="memItemLeft" align="right" valign="top"><a id="ga8a4ccc23c3c610230657bd1d791414f7"></a>
+typedef struct <a class="el" href="struct_ball__s.html">Ball_s</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Ball</b></td></tr>
+<tr class="separator:ga8a4ccc23c3c610230657bd1d791414f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac24c6c473b5f2e72a45098065a4ff77f"><td class="memItemLeft" align="right" valign="top"><a id="gac24c6c473b5f2e72a45098065a4ff77f"></a>
+typedef struct <a class="el" href="struct_spring__s.html">Spring_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___physics.html#gac24c6c473b5f2e72a45098065a4ff77f">Spring</a></td></tr>
+<tr class="memdesc:gac24c6c473b5f2e72a45098065a4ff77f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure représentant un ressort entre une balle et son point d'attache. <br /></td></tr>
+<tr class="separator:gac24c6c473b5f2e72a45098065a4ff77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ga7ca6671be5dcc68bdeb5054966e188aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_ball__s.html">Ball</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___physics.html#ga7ca6671be5dcc68bdeb5054966e188aa">Ball_set</a> (<a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a> position)</td></tr>
+<tr class="memdesc:ga7ca6671be5dcc68bdeb5054966e188aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise une balle et permet de définir sa position.  <a href="group___physics.html#ga7ca6671be5dcc68bdeb5054966e188aa">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga7ca6671be5dcc68bdeb5054966e188aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7111d8da3108c1825ad25d23518481c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___physics.html#ga7111d8da3108c1825ad25d23518481c8">Ball_connect</a> (<a class="el" href="struct_ball__s.html">Ball</a> *ball1, <a class="el" href="struct_ball__s.html">Ball</a> *ball2, float length)</td></tr>
+<tr class="memdesc:ga7111d8da3108c1825ad25d23518481c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lie deux balles avec un ressort dont la longueur au repos est spécifiée.  <a href="group___physics.html#ga7111d8da3108c1825ad25d23518481c8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga7111d8da3108c1825ad25d23518481c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga836b6e248683b804c010a0e518b3fbab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___physics.html#ga836b6e248683b804c010a0e518b3fbab">Ball_deconnect</a> (<a class="el" href="struct_ball__s.html">Ball</a> *ball1, <a class="el" href="struct_ball__s.html">Ball</a> *ball2)</td></tr>
+<tr class="memdesc:ga836b6e248683b804c010a0e518b3fbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime le ressort liant deux balles.  <a href="group___physics.html#ga836b6e248683b804c010a0e518b3fbab">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga836b6e248683b804c010a0e518b3fbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32e3ee72d7035cc3c181489889b1eada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___physics.html#ga32e3ee72d7035cc3c181489889b1eada">Ball_updateVelocity</a> (<a class="el" href="struct_ball__s.html">Ball</a> *ball, float timeStep)</td></tr>
+<tr class="memdesc:ga32e3ee72d7035cc3c181489889b1eada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour la vitesse d'une balle en fonction des forces qui lui sont appliquées.  <a href="group___physics.html#ga32e3ee72d7035cc3c181489889b1eada">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga32e3ee72d7035cc3c181489889b1eada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d7fae44c4a94f728f00282b56367c29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___physics.html#ga2d7fae44c4a94f728f00282b56367c29">Ball_updatePosition</a> (<a class="el" href="struct_ball__s.html">Ball</a> *ball, float timeStep)</td></tr>
+<tr class="memdesc:ga2d7fae44c4a94f728f00282b56367c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour la position d'une balle en fonction de sa vitesse.  <a href="group___physics.html#ga2d7fae44c4a94f728f00282b56367c29">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga2d7fae44c4a94f728f00282b56367c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ga7111d8da3108c1825ad25d23518481c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7111d8da3108c1825ad25d23518481c8">&#9670;&nbsp;</a></span>Ball_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ball_connect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_ball__s.html">Ball</a> *&#160;</td>
+          <td class="paramname"><em>ball1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_ball__s.html">Ball</a> *&#160;</td>
+          <td class="paramname"><em>ball2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lie deux balles avec un ressort dont la longueur au repos est spécifiée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ball1</td><td>la première balle. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ball2</td><td>la seconde balle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>la longueur au repos du ressort. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>EXIT_SUCCESS ou EXIT_FAILURE. </dd></dl>
+
+</div>
+</div>
+<a id="ga836b6e248683b804c010a0e518b3fbab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga836b6e248683b804c010a0e518b3fbab">&#9670;&nbsp;</a></span>Ball_deconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ball_deconnect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_ball__s.html">Ball</a> *&#160;</td>
+          <td class="paramname"><em>ball1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_ball__s.html">Ball</a> *&#160;</td>
+          <td class="paramname"><em>ball2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime le ressort liant deux balles. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ball1</td><td>la première balle. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ball2</td><td>la seconde balle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>EXIT_SUCCESS ou EXIT_FAILURE. </dd></dl>
+
+</div>
+</div>
+<a id="ga7ca6671be5dcc68bdeb5054966e188aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ca6671be5dcc68bdeb5054966e188aa">&#9670;&nbsp;</a></span>Ball_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ball__s.html">Ball</a> Ball_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a>&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise une balle et permet de définir sa position. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>le vecteur position de la balle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La balle initialisée. </dd></dl>
+
+</div>
+</div>
+<a id="ga2d7fae44c4a94f728f00282b56367c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d7fae44c4a94f728f00282b56367c29">&#9670;&nbsp;</a></span>Ball_updatePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ball_updatePosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_ball__s.html">Ball</a> *&#160;</td>
+          <td class="paramname"><em>ball</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timeStep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met à jour la position d'une balle en fonction de sa vitesse. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ball</td><td>la balle à mettre à jour. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeStep</td><td>le pas de temps. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga32e3ee72d7035cc3c181489889b1eada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32e3ee72d7035cc3c181489889b1eada">&#9670;&nbsp;</a></span>Ball_updateVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ball_updateVelocity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_ball__s.html">Ball</a> *&#160;</td>
+          <td class="paramname"><em>ball</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timeStep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met à jour la vitesse d'une balle en fonction des forces qui lui sont appliquées. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ball</td><td>la balle à mettre à jour. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeStep</td><td>le pas de temps. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

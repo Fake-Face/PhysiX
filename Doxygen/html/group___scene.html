@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simple physics Engine: Scene</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simple physics Engine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Scene</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_scene__s.html">Scene_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure représentant la scène de la simulation. Elle contient la caméra par laquelle la scène est vue ainsi que toutes les balles.  <a href="struct_scene__s.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball_query__s.html">BallQuery_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure représentant le résultat d'une recherche de balle.  <a href="struct_ball_query__s.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:ga79ca9edd9d09df675127d3b05540eb66"><td class="memItemLeft" align="right" valign="top"><a id="ga79ca9edd9d09df675127d3b05540eb66"></a>
+typedef struct <a class="el" href="struct_scene__s.html">Scene_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a></td></tr>
+<tr class="memdesc:ga79ca9edd9d09df675127d3b05540eb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure représentant la scène de la simulation. Elle contient la caméra par laquelle la scène est vue ainsi que toutes les balles. <br /></td></tr>
+<tr class="separator:ga79ca9edd9d09df675127d3b05540eb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabeaa71bcb8597039dd48f371513c1402"><td class="memItemLeft" align="right" valign="top"><a id="gabeaa71bcb8597039dd48f371513c1402"></a>
+typedef struct <a class="el" href="struct_ball_query__s.html">BallQuery_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#gabeaa71bcb8597039dd48f371513c1402">BallQuery</a></td></tr>
+<tr class="memdesc:gabeaa71bcb8597039dd48f371513c1402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure représentant le résultat d'une recherche de balle. <br /></td></tr>
+<tr class="separator:gabeaa71bcb8597039dd48f371513c1402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ga5af576f294f44aa8839cbe080755b1ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga5af576f294f44aa8839cbe080755b1ba">Scene_new</a> (<a class="el" href="group___renderer.html#ga317189feda54d651b955d70141f53eba">Renderer</a> *renderer)</td></tr>
+<tr class="memdesc:ga5af576f294f44aa8839cbe080755b1ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construit une scène.  <a href="group___scene.html#ga5af576f294f44aa8839cbe080755b1ba">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga5af576f294f44aa8839cbe080755b1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d8943446bb44ae2690288a6eedc222d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga0d8943446bb44ae2690288a6eedc222d">Scene_free</a> (<a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *scene)</td></tr>
+<tr class="memdesc:ga0d8943446bb44ae2690288a6eedc222d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Détruit une scène précédemment construite avec <a class="el" href="group___scene.html#ga5af576f294f44aa8839cbe080755b1ba" title="Construit une scène.">Scene_new()</a>. Le pointeur vers la scène doit être affecté à NULL après l'appel à cette fonction.  <a href="group___scene.html#ga0d8943446bb44ae2690288a6eedc222d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga0d8943446bb44ae2690288a6eedc222d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8739c653b5bff663fec2ea59fdc6a92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___renderer.html#ga317189feda54d651b955d70141f53eba">Renderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#gab8739c653b5bff663fec2ea59fdc6a92">Scene_getRenderer</a> (<a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *scene)</td></tr>
+<tr class="memdesc:gab8739c653b5bff663fec2ea59fdc6a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie le moteur de rendu associé à la scène.  <a href="group___scene.html#gab8739c653b5bff663fec2ea59fdc6a92">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gab8739c653b5bff663fec2ea59fdc6a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea5c5dd912f2029313044e98319ad0bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#gaea5c5dd912f2029313044e98319ad0bc">Scene_getCamera</a> (<a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *scene)</td></tr>
+<tr class="memdesc:gaea5c5dd912f2029313044e98319ad0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la caméra par laquelle la scène est vue.  <a href="group___scene.html#gaea5c5dd912f2029313044e98319ad0bc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaea5c5dd912f2029313044e98319ad0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d36853064b7ea67da4359347e116f81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_ball__s.html">Ball</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga7d36853064b7ea67da4359347e116f81">Scene_addBall</a> (<a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *scene, <a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a> position)</td></tr>
+<tr class="memdesc:ga7d36853064b7ea67da4359347e116f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute une balle à la scène.  <a href="group___scene.html#ga7d36853064b7ea67da4359347e116f81">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga7d36853064b7ea67da4359347e116f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9fb6aca8aed2a78cf0463b672834acf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#gaa9fb6aca8aed2a78cf0463b672834acf">Scene_removeBall</a> (<a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *scene, <a class="el" href="struct_ball__s.html">Ball</a> *ball)</td></tr>
+<tr class="memdesc:gaa9fb6aca8aed2a78cf0463b672834acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime une balle de la scène. Les adresses des balles sont invalidées après l'appel à cette fonction.  <a href="group___scene.html#gaa9fb6aca8aed2a78cf0463b672834acf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaa9fb6aca8aed2a78cf0463b672834acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadb64829ede70f815d8fe4e54e7c3c20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#gaadb64829ede70f815d8fe4e54e7c3c20">Scene_getNbBalls</a> (<a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *scene)</td></tr>
+<tr class="memdesc:gaadb64829ede70f815d8fe4e54e7c3c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie le nombre de balles présentes dans la scène.  <a href="group___scene.html#gaadb64829ede70f815d8fe4e54e7c3c20">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaadb64829ede70f815d8fe4e54e7c3c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d6aa263db0e473ed23dc93362c9bed2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_ball__s.html">Ball</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga2d6aa263db0e473ed23dc93362c9bed2">Scene_getBalls</a> (<a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *scene)</td></tr>
+<tr class="memdesc:ga2d6aa263db0e473ed23dc93362c9bed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie le tableau contenant les balles présentes dans la scène. La taille de ce tableau s'obtient avec la fonction <a class="el" href="group___scene.html#gaadb64829ede70f815d8fe4e54e7c3c20" title="Renvoie le nombre de balles présentes dans la scène.">Scene_getNbBalls()</a>.  <a href="group___scene.html#ga2d6aa263db0e473ed23dc93362c9bed2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga2d6aa263db0e473ed23dc93362c9bed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga578140ec412817aad9e7e05d8c8b8dea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga578140ec412817aad9e7e05d8c8b8dea">Scene_updateBalls</a> (<a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *scene, float timeStep)</td></tr>
+<tr class="memdesc:ga578140ec412817aad9e7e05d8c8b8dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour les positions des balles présentes dans la scène. Cette fonction correspond au moteur physique.  <a href="group___scene.html#ga578140ec412817aad9e7e05d8c8b8dea">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga578140ec412817aad9e7e05d8c8b8dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga059f3bfb457e27f6bd2ac68615030763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga059f3bfb457e27f6bd2ac68615030763">Scene_renderBalls</a> (<a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *scene)</td></tr>
+<tr class="memdesc:ga059f3bfb457e27f6bd2ac68615030763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule le rendu de la scène vue par sa caméra.  <a href="group___scene.html#ga059f3bfb457e27f6bd2ac68615030763">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga059f3bfb457e27f6bd2ac68615030763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9cad4d7125c0e22dcc685d376cf7e42a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___scene.html#gabeaa71bcb8597039dd48f371513c1402">BallQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga9cad4d7125c0e22dcc685d376cf7e42a">Scene_getNearestBall</a> (<a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *scene, <a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a> position)</td></tr>
+<tr class="memdesc:ga9cad4d7125c0e22dcc685d376cf7e42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recherche dans une scène la balle la plus proche d'une position donnée.  <a href="group___scene.html#ga9cad4d7125c0e22dcc685d376cf7e42a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga9cad4d7125c0e22dcc685d376cf7e42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54e5af2f477cd357e93b652fb4473e71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga54e5af2f477cd357e93b652fb4473e71">Scene_getNearestBalls</a> (<a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *scene, <a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a> position, <a class="el" href="group___scene.html#gabeaa71bcb8597039dd48f371513c1402">BallQuery</a> *queries, int nbQueries)</td></tr>
+<tr class="memdesc:ga54e5af2f477cd357e93b652fb4473e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recherche dans une scène les balles les plus proches d'une position donnée.  <a href="group___scene.html#ga54e5af2f477cd357e93b652fb4473e71">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga54e5af2f477cd357e93b652fb4473e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga797200f89988b4de0558c8cb00085d60"><td class="memItemLeft" align="right" valign="top"><a id="ga797200f89988b4de0558c8cb00085d60"></a>
+<a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga797200f89988b4de0558c8cb00085d60">m_camera</a></td></tr>
+<tr class="memdesc:ga797200f89988b4de0558c8cb00085d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">La caméra par laquelle la scène est vue. <br /></td></tr>
+<tr class="separator:ga797200f89988b4de0558c8cb00085d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f05c841e8180abc57fceb224b19df0a"><td class="memItemLeft" align="right" valign="top"><a id="ga2f05c841e8180abc57fceb224b19df0a"></a>
+<a class="el" href="group___renderer.html#ga317189feda54d651b955d70141f53eba">Renderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga2f05c841e8180abc57fceb224b19df0a">m_renderer</a></td></tr>
+<tr class="memdesc:ga2f05c841e8180abc57fceb224b19df0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le moteur de rendu. <br /></td></tr>
+<tr class="separator:ga2f05c841e8180abc57fceb224b19df0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4316bfaa35bb7ce54376f8a81be1ea5f"><td class="memItemLeft" align="right" valign="top"><a id="ga4316bfaa35bb7ce54376f8a81be1ea5f"></a>
+<a class="el" href="struct_ball__s.html">Ball</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga4316bfaa35bb7ce54376f8a81be1ea5f">m_balls</a></td></tr>
+<tr class="memdesc:ga4316bfaa35bb7ce54376f8a81be1ea5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tableau contenant les balles présentes dans la scène. <br /></td></tr>
+<tr class="separator:ga4316bfaa35bb7ce54376f8a81be1ea5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2874521ecc8e052a339a49fd4ad40696"><td class="memItemLeft" align="right" valign="top"><a id="ga2874521ecc8e052a339a49fd4ad40696"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga2874521ecc8e052a339a49fd4ad40696">m_nbBalls</a></td></tr>
+<tr class="memdesc:ga2874521ecc8e052a339a49fd4ad40696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nombre de balles dans la scène. <br /></td></tr>
+<tr class="separator:ga2874521ecc8e052a339a49fd4ad40696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a12eec9162cd7e252afb6be47c812e7"><td class="memItemLeft" align="right" valign="top"><a id="ga5a12eec9162cd7e252afb6be47c812e7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga5a12eec9162cd7e252afb6be47c812e7">m_capacity</a></td></tr>
+<tr class="memdesc:ga5a12eec9162cd7e252afb6be47c812e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nombre maximal de balles avant d'effectuer une réallocation mémoire. <br /></td></tr>
+<tr class="separator:ga5a12eec9162cd7e252afb6be47c812e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacc87c0b27b8412049520b1498472156"><td class="memItemLeft" align="right" valign="top"><a id="gaacc87c0b27b8412049520b1498472156"></a>
+<a class="el" href="struct_ball__s.html">Ball</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#gaacc87c0b27b8412049520b1498472156">ball</a></td></tr>
+<tr class="memdesc:gaacc87c0b27b8412049520b1498472156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointeur vers la balle. <br /></td></tr>
+<tr class="separator:gaacc87c0b27b8412049520b1498472156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06f14a9abd47b91465f895d5259cdc1b"><td class="memItemLeft" align="right" valign="top"><a id="ga06f14a9abd47b91465f895d5259cdc1b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scene.html#ga06f14a9abd47b91465f895d5259cdc1b">distance</a></td></tr>
+<tr class="memdesc:ga06f14a9abd47b91465f895d5259cdc1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance entre la balle et la position donnée. <br /></td></tr>
+<tr class="separator:ga06f14a9abd47b91465f895d5259cdc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ga7d36853064b7ea67da4359347e116f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d36853064b7ea67da4359347e116f81">&#9670;&nbsp;</a></span>Scene_addBall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ball__s.html">Ball</a>* Scene_addBall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a>&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute une balle à la scène. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">scene</td><td>la scène. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>la position de la nouvelle balle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>EXIT_SUCCESS ou EXIT_FAILURE. </dd></dl>
+
+</div>
+</div>
+<a id="ga0d8943446bb44ae2690288a6eedc222d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0d8943446bb44ae2690288a6eedc222d">&#9670;&nbsp;</a></span>Scene_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Détruit une scène précédemment construite avec <a class="el" href="group___scene.html#ga5af576f294f44aa8839cbe080755b1ba" title="Construit une scène.">Scene_new()</a>. Le pointeur vers la scène doit être affecté à NULL après l'appel à cette fonction. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">scene</td><td>la scène à détruire. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga2d6aa263db0e473ed23dc93362c9bed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d6aa263db0e473ed23dc93362c9bed2">&#9670;&nbsp;</a></span>Scene_getBalls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ball__s.html">Ball</a>* Scene_getBalls </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renvoie le tableau contenant les balles présentes dans la scène. La taille de ce tableau s'obtient avec la fonction <a class="el" href="group___scene.html#gaadb64829ede70f815d8fe4e54e7c3c20" title="Renvoie le nombre de balles présentes dans la scène.">Scene_getNbBalls()</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>la scène. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le tableau contenant les balles présentes dans la scène. </dd></dl>
+
+</div>
+</div>
+<a id="gaea5c5dd912f2029313044e98319ad0bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea5c5dd912f2029313044e98319ad0bc">&#9670;&nbsp;</a></span>Scene_getCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a>* Scene_getCamera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renvoie la caméra par laquelle la scène est vue. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>la scène. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La caméra associée à la scène. </dd></dl>
+
+</div>
+</div>
+<a id="gaadb64829ede70f815d8fe4e54e7c3c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadb64829ede70f815d8fe4e54e7c3c20">&#9670;&nbsp;</a></span>Scene_getNbBalls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Scene_getNbBalls </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renvoie le nombre de balles présentes dans la scène. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>la scène. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre de balles présentes dans la scène. </dd></dl>
+
+</div>
+</div>
+<a id="ga9cad4d7125c0e22dcc685d376cf7e42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9cad4d7125c0e22dcc685d376cf7e42a">&#9670;&nbsp;</a></span>Scene_getNearestBall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___scene.html#gabeaa71bcb8597039dd48f371513c1402">BallQuery</a> Scene_getNearestBall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a>&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recherche dans une scène la balle la plus proche d'une position donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>la scène dans laquelle faire la recherche. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>la position autour de laquelle faire la recherche. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Une structure BallQuery contenant un pointeur vers la balle la plus proche ainsi que sa distance avec la position spécifiée. Si la scène ne contient aucune balle, le pointeur vers la balle vaut NULL. </dd></dl>
+
+</div>
+</div>
+<a id="ga54e5af2f477cd357e93b652fb4473e71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga54e5af2f477cd357e93b652fb4473e71">&#9670;&nbsp;</a></span>Scene_getNearestBalls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Scene_getNearestBalls </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___scene.html#gabeaa71bcb8597039dd48f371513c1402">BallQuery</a> *&#160;</td>
+          <td class="paramname"><em>queries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbQueries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recherche dans une scène les balles les plus proches d'une position donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>la scène dans laquelle faire la recherche. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>la position autour de laquelle faire la recherche. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">queries</td><td>tableau dans lequel vont être écrit les résultats. Il doit contenir au moins nbQueries cases. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbQueries</td><td>le nombre de balles à rechercher. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>EXIT_SUCCESS ou EXIT_FAILURE. Le resultat de la recherche est écrit dans le tableau queries. </dd></dl>
+
+</div>
+</div>
+<a id="gab8739c653b5bff663fec2ea59fdc6a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8739c653b5bff663fec2ea59fdc6a92">&#9670;&nbsp;</a></span>Scene_getRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___renderer.html#ga317189feda54d651b955d70141f53eba">Renderer</a>* Scene_getRenderer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renvoie le moteur de rendu associé à la scène. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>la scène. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le moteur de rendu associé à la scène. </dd></dl>
+
+</div>
+</div>
+<a id="ga5af576f294f44aa8839cbe080755b1ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5af576f294f44aa8839cbe080755b1ba">&#9670;&nbsp;</a></span>Scene_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a>* Scene_new </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___renderer.html#ga317189feda54d651b955d70141f53eba">Renderer</a> *&#160;</td>
+          <td class="paramname"><em>renderer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construit une scène. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">renderer</td><td>le moteur de rendu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La scène créée. Renvoie NULL en cas d'erreur. </dd></dl>
+
+</div>
+</div>
+<a id="gaa9fb6aca8aed2a78cf0463b672834acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9fb6aca8aed2a78cf0463b672834acf">&#9670;&nbsp;</a></span>Scene_removeBall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene_removeBall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_ball__s.html">Ball</a> *&#160;</td>
+          <td class="paramname"><em>ball</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime une balle de la scène. Les adresses des balles sont invalidées après l'appel à cette fonction. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">scene</td><td>la scène. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ball</td><td>pointeur vers la balle à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga059f3bfb457e27f6bd2ac68615030763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga059f3bfb457e27f6bd2ac68615030763">&#9670;&nbsp;</a></span>Scene_renderBalls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene_renderBalls </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule le rendu de la scène vue par sa caméra. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>la scène à rendre. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga578140ec412817aad9e7e05d8c8b8dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga578140ec412817aad9e7e05d8c8b8dea">&#9670;&nbsp;</a></span>Scene_updateBalls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene_updateBalls </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___scene.html#ga79ca9edd9d09df675127d3b05540eb66">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timeStep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met à jour les positions des balles présentes dans la scène. Cette fonction correspond au moteur physique. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">scene</td><td>la scène. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeStep</td><td>le pas de temps. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

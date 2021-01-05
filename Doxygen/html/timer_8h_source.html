@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simple physics Engine:  Fichier source de C:/Users/arnau/Documents/Data/Dev/SimplePhysicsEngine_Basecode_Part2/SimplePhysicsEngine/timer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simple physics Engine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6ff16dbf211f70f9e46f3c182aff425b.html">SimplePhysicsEngine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">timer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="timer_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef _TIMER_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define _TIMER_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="struct_timer__s.html">   10</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_timer__s.html">Timer_s</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="group___timer.html#ga665b6d96db8e1a71fb41687a63e34da8">   13</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="group___timer.html#ga665b6d96db8e1a71fb41687a63e34da8">m_startTime</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="group___timer.html#gacc6f0a0b4ba267d7a7e7ec5843104f6b">   16</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="group___timer.html#gacc6f0a0b4ba267d7a7e7ec5843104f6b">m_currentTime</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="group___timer.html#ga5786f41d904c5e709007c306eb1eb888">   19</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="group___timer.html#ga5786f41d904c5e709007c306eb1eb888">m_previousTime</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="group___timer.html#ga0ff6bdaebef534f2239c3602fff57428">   22</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="group___timer.html#ga0ff6bdaebef534f2239c3602fff57428">m_delta</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="group___timer.html#ga00da830e731f52e9a79d37e3585ce253">   23</a></span>&#160;} <a class="code" href="group___timer.html#ga00da830e731f52e9a79d37e3585ce253">Timer</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<a class="code" href="struct_timer__s.html">Timer</a>* <a class="code" href="group___timer.html#ga1a683a9430b6558ff825d14f262891cd">Timer_new</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___timer.html#ga9d6d24011cb9541746937b354dc30868">Timer_free</a>(<a class="code" href="struct_timer__s.html">Timer</a>* timer);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___timer.html#ga2d0dfe49f94c6d4ffda6790455bfa388">Timer_start</a>(<a class="code" href="struct_timer__s.html">Timer</a>* timer);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___timer.html#ga34baee95ea9ebd6513b55b70e8621d42">Timer_update</a>(<a class="code" href="struct_timer__s.html">Timer</a>* timer);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">float</span> <a class="code" href="group___timer.html#gae759142c365ea8c9ab78696e7aff0271">Timer_getDelta</a>(<a class="code" href="struct_timer__s.html">Timer</a> *timer);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">float</span> <a class="code" href="group___timer.html#gae7e66b75bde27df2c714cc80fb0bc3c5">Timer_getElapsed</a>(<a class="code" href="struct_timer__s.html">Timer</a> *timer);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct_timer__s_html"><div class="ttname"><a href="struct_timer__s.html">Timer_s</a></div><div class="ttdoc">Structure représentant un chronomètre.</div><div class="ttdef"><b>Definition:</b> timer.h:11</div></div>
+<div class="ttc" id="agroup___timer_html_gae7e66b75bde27df2c714cc80fb0bc3c5"><div class="ttname"><a href="group___timer.html#gae7e66b75bde27df2c714cc80fb0bc3c5">Timer_getElapsed</a></div><div class="ttdeci">float Timer_getElapsed(Timer *timer)</div><div class="ttdoc">Renvoie l'écart de temps (en secondes) entre le lancement du timer avec la fonction Timer_start() et ...</div><div class="ttdef"><b>Definition:</b> timer.c:60</div></div>
+<div class="ttc" id="agroup___timer_html_gacc6f0a0b4ba267d7a7e7ec5843104f6b"><div class="ttname"><a href="group___timer.html#gacc6f0a0b4ba267d7a7e7ec5843104f6b">Timer_s::m_currentTime</a></div><div class="ttdeci">float m_currentTime</div><div class="ttdoc">Temps du dernier appel à Timer_update().</div><div class="ttdef"><b>Definition:</b> timer.h:16</div></div>
+<div class="ttc" id="agroup___timer_html_gae759142c365ea8c9ab78696e7aff0271"><div class="ttname"><a href="group___timer.html#gae759142c365ea8c9ab78696e7aff0271">Timer_getDelta</a></div><div class="ttdeci">float Timer_getDelta(Timer *timer)</div><div class="ttdoc">Renvoie l'écart de temps (en secondes) entre les deux derniers appels à la fonction Timer_update().</div><div class="ttdef"><b>Definition:</b> timer.c:55</div></div>
+<div class="ttc" id="agroup___timer_html_ga9d6d24011cb9541746937b354dc30868"><div class="ttname"><a href="group___timer.html#ga9d6d24011cb9541746937b354dc30868">Timer_free</a></div><div class="ttdeci">void Timer_free(Timer *timer)</div><div class="ttdoc">Détruit un timer préalablement alloué avec Timer_new().</div><div class="ttdef"><b>Definition:</b> timer.c:29</div></div>
+<div class="ttc" id="agroup___timer_html_ga34baee95ea9ebd6513b55b70e8621d42"><div class="ttname"><a href="group___timer.html#ga34baee95ea9ebd6513b55b70e8621d42">Timer_update</a></div><div class="ttdeci">void Timer_update(Timer *timer)</div><div class="ttdoc">Met à jour le timer en fonction du temps actuel.</div><div class="ttdef"><b>Definition:</b> timer.c:48</div></div>
+<div class="ttc" id="agroup___timer_html_ga00da830e731f52e9a79d37e3585ce253"><div class="ttname"><a href="group___timer.html#ga00da830e731f52e9a79d37e3585ce253">Timer</a></div><div class="ttdeci">struct Timer_s Timer</div><div class="ttdoc">Structure représentant un chronomètre.</div></div>
+<div class="ttc" id="agroup___timer_html_ga0ff6bdaebef534f2239c3602fff57428"><div class="ttname"><a href="group___timer.html#ga0ff6bdaebef534f2239c3602fff57428">Timer_s::m_delta</a></div><div class="ttdeci">float m_delta</div><div class="ttdoc">Ecart entre les deux derniers appels à Timer_update().</div><div class="ttdef"><b>Definition:</b> timer.h:22</div></div>
+<div class="ttc" id="agroup___timer_html_ga5786f41d904c5e709007c306eb1eb888"><div class="ttname"><a href="group___timer.html#ga5786f41d904c5e709007c306eb1eb888">Timer_s::m_previousTime</a></div><div class="ttdeci">float m_previousTime</div><div class="ttdoc">Temps de l'avant dernier appel à Timer_update().</div><div class="ttdef"><b>Definition:</b> timer.h:19</div></div>
+<div class="ttc" id="agroup___timer_html_ga2d0dfe49f94c6d4ffda6790455bfa388"><div class="ttname"><a href="group___timer.html#ga2d0dfe49f94c6d4ffda6790455bfa388">Timer_start</a></div><div class="ttdeci">void Timer_start(Timer *timer)</div><div class="ttdoc">Lance le timer.</div><div class="ttdef"><b>Definition:</b> timer.c:37</div></div>
+<div class="ttc" id="agroup___timer_html_ga665b6d96db8e1a71fb41687a63e34da8"><div class="ttname"><a href="group___timer.html#ga665b6d96db8e1a71fb41687a63e34da8">Timer_s::m_startTime</a></div><div class="ttdeci">float m_startTime</div><div class="ttdoc">Temps de départ.</div><div class="ttdef"><b>Definition:</b> timer.h:13</div></div>
+<div class="ttc" id="agroup___timer_html_ga1a683a9430b6558ff825d14f262891cd"><div class="ttname"><a href="group___timer.html#ga1a683a9430b6558ff825d14f262891cd">Timer_new</a></div><div class="ttdeci">Timer * Timer_new()</div><div class="ttdoc">Crée un nouveau timer.</div><div class="ttdef"><b>Definition:</b> timer.c:13</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

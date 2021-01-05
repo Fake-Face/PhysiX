@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simple physics Engine:  Fichier source de C:/Users/arnau/Documents/Data/Dev/SimplePhysicsEngine_Basecode_Part2/SimplePhysicsEngine/physics.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simple physics Engine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6ff16dbf211f70f9e46f3c182aff425b.html">SimplePhysicsEngine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">physics.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="physics_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _PHYSICS_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _PHYSICS_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define MAX_EDGES 10</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vector_8h.html">vector.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_ball__s.html">Ball_s</a> <a class="code" href="struct_ball__s.html">Ball</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_spring__s.html">   15</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_spring__s.html">Spring_s</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_spring__s.html#ac243707bdcb94cbf2fc6397cb5b182b5">   18</a></span>&#160;    <a class="code" href="struct_ball__s.html">Ball</a> *<a class="code" href="struct_spring__s.html#ac243707bdcb94cbf2fc6397cb5b182b5">other</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_spring__s.html#a6150639f5295064e97e299a9206d16b1">   21</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_spring__s.html#a6150639f5295064e97e299a9206d16b1">length</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="group___physics.html#gac24c6c473b5f2e72a45098065a4ff77f">   22</a></span>&#160;} <a class="code" href="group___physics.html#gac24c6c473b5f2e72a45098065a4ff77f">Spring</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_ball__s.html">   25</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_ball__s.html">Ball_s</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_ball__s.html#a73ce306f4a2e972d8d02d1ace209af25">   28</a></span>&#160;    <a class="code" href="struct_vec2__s.html">Vec2</a> <a class="code" href="struct_ball__s.html#a73ce306f4a2e972d8d02d1ace209af25">position</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_ball__s.html#adfdb75310865301fdfb552f6f3e6de15">   31</a></span>&#160;    <a class="code" href="struct_vec2__s.html">Vec2</a> <a class="code" href="struct_ball__s.html#adfdb75310865301fdfb552f6f3e6de15">velocity</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_ball__s.html#a7b2fa2b4300edd7ec1c54209a6a20258">   34</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_ball__s.html#a7b2fa2b4300edd7ec1c54209a6a20258">mass</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_ball__s.html#a585bd15db005143bac988d78710e4e93">   37</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_ball__s.html#a585bd15db005143bac988d78710e4e93">friction</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_ball__s.html#a80465f2bcb3636078d0d72732fbfa351">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_ball__s.html#a80465f2bcb3636078d0d72732fbfa351">nbSprings</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_ball__s.html#a8cb262bc0ff5c0b6f545a8ade75b4ce2">   43</a></span>&#160;    <a class="code" href="struct_spring__s.html">Spring</a> <a class="code" href="struct_ball__s.html#a8cb262bc0ff5c0b6f545a8ade75b4ce2">springs</a>[MAX_EDGES];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="struct_ball__s.html">Ball</a> <a class="code" href="group___physics.html#ga7ca6671be5dcc68bdeb5054966e188aa">Ball_set</a>(<a class="code" href="struct_vec2__s.html">Vec2</a> position);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___physics.html#ga7111d8da3108c1825ad25d23518481c8">Ball_connect</a>(<a class="code" href="struct_ball__s.html">Ball</a> *ball1, <a class="code" href="struct_ball__s.html">Ball</a> *ball2, <span class="keywordtype">float</span> length);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___physics.html#ga836b6e248683b804c010a0e518b3fbab">Ball_deconnect</a>(<a class="code" href="struct_ball__s.html">Ball</a> *ball1, <a class="code" href="struct_ball__s.html">Ball</a> *ball2);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___physics.html#ga32e3ee72d7035cc3c181489889b1eada">Ball_updateVelocity</a>(<a class="code" href="struct_ball__s.html">Ball</a> *ball, <span class="keywordtype">float</span> timeStep);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___physics.html#ga2d7fae44c4a94f728f00282b56367c29">Ball_updatePosition</a>(<a class="code" href="struct_ball__s.html">Ball</a> *ball, <span class="keywordtype">float</span> timeStep);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct_ball__s_html"><div class="ttname"><a href="struct_ball__s.html">Ball_s</a></div><div class="ttdoc">Structure représentant une balle. Elle peut être liée à d'autres balle avec des ressorts.</div><div class="ttdef"><b>Definition:</b> physics.h:26</div></div>
+<div class="ttc" id="astruct_spring__s_html_ac243707bdcb94cbf2fc6397cb5b182b5"><div class="ttname"><a href="struct_spring__s.html#ac243707bdcb94cbf2fc6397cb5b182b5">Spring_s::other</a></div><div class="ttdeci">Ball * other</div><div class="ttdoc">Pointeur vers le point d'attache.</div><div class="ttdef"><b>Definition:</b> physics.h:18</div></div>
+<div class="ttc" id="astruct_ball__s_html_a73ce306f4a2e972d8d02d1ace209af25"><div class="ttname"><a href="struct_ball__s.html#a73ce306f4a2e972d8d02d1ace209af25">Ball_s::position</a></div><div class="ttdeci">Vec2 position</div><div class="ttdoc">Vecteur position de la balle.</div><div class="ttdef"><b>Definition:</b> physics.h:28</div></div>
+<div class="ttc" id="agroup___physics_html_ga32e3ee72d7035cc3c181489889b1eada"><div class="ttname"><a href="group___physics.html#ga32e3ee72d7035cc3c181489889b1eada">Ball_updateVelocity</a></div><div class="ttdeci">void Ball_updateVelocity(Ball *ball, float timeStep)</div><div class="ttdoc">Met à jour la vitesse d'une balle en fonction des forces qui lui sont appliquées.</div><div class="ttdef"><b>Definition:</b> physics.c:78</div></div>
+<div class="ttc" id="agroup___physics_html_ga836b6e248683b804c010a0e518b3fbab"><div class="ttname"><a href="group___physics.html#ga836b6e248683b804c010a0e518b3fbab">Ball_deconnect</a></div><div class="ttdeci">int Ball_deconnect(Ball *ball1, Ball *ball2)</div><div class="ttdoc">Supprime le ressort liant deux balles.</div><div class="ttdef"><b>Definition:</b> physics.c:38</div></div>
+<div class="ttc" id="astruct_spring__s_html"><div class="ttname"><a href="struct_spring__s.html">Spring_s</a></div><div class="ttdoc">Structure représentant un ressort entre une balle et son point d'attache.</div><div class="ttdef"><b>Definition:</b> physics.h:16</div></div>
+<div class="ttc" id="astruct_ball__s_html_a585bd15db005143bac988d78710e4e93"><div class="ttname"><a href="struct_ball__s.html#a585bd15db005143bac988d78710e4e93">Ball_s::friction</a></div><div class="ttdeci">float friction</div><div class="ttdoc">Coefficient de friction de la balle.</div><div class="ttdef"><b>Definition:</b> physics.h:37</div></div>
+<div class="ttc" id="astruct_ball__s_html_adfdb75310865301fdfb552f6f3e6de15"><div class="ttname"><a href="struct_ball__s.html#adfdb75310865301fdfb552f6f3e6de15">Ball_s::velocity</a></div><div class="ttdeci">Vec2 velocity</div><div class="ttdoc">Vecteur vitesse de la balle.</div><div class="ttdef"><b>Definition:</b> physics.h:31</div></div>
+<div class="ttc" id="agroup___physics_html_gac24c6c473b5f2e72a45098065a4ff77f"><div class="ttname"><a href="group___physics.html#gac24c6c473b5f2e72a45098065a4ff77f">Spring</a></div><div class="ttdeci">struct Spring_s Spring</div><div class="ttdoc">Structure représentant un ressort entre une balle et son point d'attache.</div></div>
+<div class="ttc" id="agroup___physics_html_ga2d7fae44c4a94f728f00282b56367c29"><div class="ttname"><a href="group___physics.html#ga2d7fae44c4a94f728f00282b56367c29">Ball_updatePosition</a></div><div class="ttdeci">void Ball_updatePosition(Ball *ball, float timeStep)</div><div class="ttdoc">Met à jour la position d'une balle en fonction de sa vitesse.</div><div class="ttdef"><b>Definition:</b> physics.c:83</div></div>
+<div class="ttc" id="agroup___physics_html_ga7111d8da3108c1825ad25d23518481c8"><div class="ttname"><a href="group___physics.html#ga7111d8da3108c1825ad25d23518481c8">Ball_connect</a></div><div class="ttdeci">int Ball_connect(Ball *ball1, Ball *ball2, float length)</div><div class="ttdoc">Lie deux balles avec un ressort dont la longueur au repos est spécifiée.</div><div class="ttdef"><b>Definition:</b> physics.c:20</div></div>
+<div class="ttc" id="astruct_ball__s_html_a80465f2bcb3636078d0d72732fbfa351"><div class="ttname"><a href="struct_ball__s.html#a80465f2bcb3636078d0d72732fbfa351">Ball_s::nbSprings</a></div><div class="ttdeci">int nbSprings</div><div class="ttdoc">Nombre de ressorts liant la balle à d'autres balles.</div><div class="ttdef"><b>Definition:</b> physics.h:40</div></div>
+<div class="ttc" id="astruct_ball__s_html_a7b2fa2b4300edd7ec1c54209a6a20258"><div class="ttname"><a href="struct_ball__s.html#a7b2fa2b4300edd7ec1c54209a6a20258">Ball_s::mass</a></div><div class="ttdeci">float mass</div><div class="ttdoc">Masse de la balle (exprimée en kg).</div><div class="ttdef"><b>Definition:</b> physics.h:34</div></div>
+<div class="ttc" id="avector_8h_html"><div class="ttname"><a href="vector_8h.html">vector.h</a></div></div>
+<div class="ttc" id="astruct_spring__s_html_a6150639f5295064e97e299a9206d16b1"><div class="ttname"><a href="struct_spring__s.html#a6150639f5295064e97e299a9206d16b1">Spring_s::length</a></div><div class="ttdeci">float length</div><div class="ttdoc">Longueur du ressort au repos.</div><div class="ttdef"><b>Definition:</b> physics.h:21</div></div>
+<div class="ttc" id="astruct_ball__s_html_a8cb262bc0ff5c0b6f545a8ade75b4ce2"><div class="ttname"><a href="struct_ball__s.html#a8cb262bc0ff5c0b6f545a8ade75b4ce2">Ball_s::springs</a></div><div class="ttdeci">Spring springs[MAX_EDGES]</div><div class="ttdoc">Tableau contenant les ressorts attachés à la balle.</div><div class="ttdef"><b>Definition:</b> physics.h:43</div></div>
+<div class="ttc" id="astruct_vec2__s_html"><div class="ttname"><a href="struct_vec2__s.html">Vec2_s</a></div><div class="ttdoc">Structure représentant un vecteur 2D dont les composantes sont de type float.</div><div class="ttdef"><b>Definition:</b> vector.h:11</div></div>
+<div class="ttc" id="agroup___physics_html_ga7ca6671be5dcc68bdeb5054966e188aa"><div class="ttname"><a href="group___physics.html#ga7ca6671be5dcc68bdeb5054966e188aa">Ball_set</a></div><div class="ttdeci">Ball Ball_set(Vec2 position)</div><div class="ttdoc">Initialise une balle et permet de définir sa position.</div><div class="ttdef"><b>Definition:</b> physics.c:8</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

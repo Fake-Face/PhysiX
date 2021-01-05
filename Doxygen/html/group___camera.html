@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simple physics Engine: Camera</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simple physics Engine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Camera</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rect__s.html">Rect_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure représenant un rectangle 2D alligné sur les axes X et Y.  <a href="struct_rect__s.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_camera__s.html">Camera_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure représentant la caméra par laquelle est vue la scène.  <a href="struct_camera__s.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:gaa8cadcded7ae946572f5e28afbf373eb"><td class="memItemLeft" align="right" valign="top"><a id="gaa8cadcded7ae946572f5e28afbf373eb"></a>
+typedef struct <a class="el" href="struct_rect__s.html">Rect_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___camera.html#gaa8cadcded7ae946572f5e28afbf373eb">Rect</a></td></tr>
+<tr class="memdesc:gaa8cadcded7ae946572f5e28afbf373eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure représenant un rectangle 2D alligné sur les axes X et Y. <br /></td></tr>
+<tr class="separator:gaa8cadcded7ae946572f5e28afbf373eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga276fe42672bb1e37d29c704c231ff44d"><td class="memItemLeft" align="right" valign="top"><a id="ga276fe42672bb1e37d29c704c231ff44d"></a>
+typedef struct <a class="el" href="struct_camera__s.html">Camera_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a></td></tr>
+<tr class="memdesc:ga276fe42672bb1e37d29c704c231ff44d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure représentant la caméra par laquelle est vue la scène. <br /></td></tr>
+<tr class="separator:ga276fe42672bb1e37d29c704c231ff44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:gac32b1ef3ac3e98ff3b5f83b541d314dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___camera.html#gaa8cadcded7ae946572f5e28afbf373eb">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___camera.html#gac32b1ef3ac3e98ff3b5f83b541d314dc">Rect_set</a> (float x, float y, float w, float h)</td></tr>
+<tr class="memdesc:gac32b1ef3ac3e98ff3b5f83b541d314dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construit un rectangle.  <a href="group___camera.html#gac32b1ef3ac3e98ff3b5f83b541d314dc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gac32b1ef3ac3e98ff3b5f83b541d314dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7fe5091d66e78ae40537f5eec6b35a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___camera.html#gaa7fe5091d66e78ae40537f5eec6b35a2">Camera_new</a> (int width, int height)</td></tr>
+<tr class="memdesc:gaa7fe5091d66e78ae40537f5eec6b35a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une caméra.  <a href="group___camera.html#gaa7fe5091d66e78ae40537f5eec6b35a2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaa7fe5091d66e78ae40537f5eec6b35a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b0c5f54546667bdff6d3b9af2b7aea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___camera.html#ga5b0c5f54546667bdff6d3b9af2b7aea2">Camera_free</a> (<a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *camera)</td></tr>
+<tr class="memdesc:ga5b0c5f54546667bdff6d3b9af2b7aea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Détruit une caméra préalablement allouée avec <a class="el" href="group___camera.html#gaa7fe5091d66e78ae40537f5eec6b35a2" title="Crée une caméra.">Camera_new()</a>.  <a href="group___camera.html#ga5b0c5f54546667bdff6d3b9af2b7aea2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga5b0c5f54546667bdff6d3b9af2b7aea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0888b4b26e7c2c24a8ffb51d3b726a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___camera.html#gac0888b4b26e7c2c24a8ffb51d3b726a3">Camera_setView</a> (<a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *camera, <a class="el" href="group___camera.html#gaa8cadcded7ae946572f5e28afbf373eb">Rect</a> *worldView)</td></tr>
+<tr class="memdesc:gac0888b4b26e7c2c24a8ffb51d3b726a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définit la zone du monde vue par la caméra.  <a href="group___camera.html#gac0888b4b26e7c2c24a8ffb51d3b726a3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gac0888b4b26e7c2c24a8ffb51d3b726a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8d7c84cf303877b55b9ca54d69de02b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___camera.html#gad8d7c84cf303877b55b9ca54d69de02b">Camera_getView</a> (<a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *camera, <a class="el" href="group___camera.html#gaa8cadcded7ae946572f5e28afbf373eb">Rect</a> *worldView)</td></tr>
+<tr class="memdesc:gad8d7c84cf303877b55b9ca54d69de02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la zone du monde vue par la caméra.  <a href="group___camera.html#gad8d7c84cf303877b55b9ca54d69de02b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gad8d7c84cf303877b55b9ca54d69de02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ff2a4ad73db0aa2013b437b4e1749df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___camera.html#ga2ff2a4ad73db0aa2013b437b4e1749df">Camera_zoom</a> (<a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *camera, <a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a> center, float factor)</td></tr>
+<tr class="memdesc:ga2ff2a4ad73db0aa2013b437b4e1749df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Réduit ou augmente la zone du monde vue par la caméra.  <a href="group___camera.html#ga2ff2a4ad73db0aa2013b437b4e1749df">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga2ff2a4ad73db0aa2013b437b4e1749df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7786bd07f26f8ce46f871205896d577"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___camera.html#gaf7786bd07f26f8ce46f871205896d577">Camera_worldToView</a> (<a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *camera, <a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a> position, int *x, int *y)</td></tr>
+<tr class="memdesc:gaf7786bd07f26f8ce46f871205896d577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforme des coordonnées exprimées dans le référentiel monde vers le référentiel caméra.  <a href="group___camera.html#gaf7786bd07f26f8ce46f871205896d577">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaf7786bd07f26f8ce46f871205896d577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga052b2f94ac46afaa3e28e3e94fe797ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___camera.html#ga052b2f94ac46afaa3e28e3e94fe797ba">Camera_viewToWorld</a> (<a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *camera, int x, int y, <a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a> *position)</td></tr>
+<tr class="memdesc:ga052b2f94ac46afaa3e28e3e94fe797ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforme des coordonnées exprimées dans le référentiel caméra vers le référentiel monde.  <a href="group___camera.html#ga052b2f94ac46afaa3e28e3e94fe797ba">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga052b2f94ac46afaa3e28e3e94fe797ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7ea9638aaeca2eb5d9f70ee5c0a9761"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___camera.html#gac7ea9638aaeca2eb5d9f70ee5c0a9761">Camera_move</a> (<a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *camera, <a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a> displacement)</td></tr>
+<tr class="memdesc:gac7ea9638aaeca2eb5d9f70ee5c0a9761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Déplace la caméra.  <a href="group___camera.html#gac7ea9638aaeca2eb5d9f70ee5c0a9761">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gac7ea9638aaeca2eb5d9f70ee5c0a9761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ga5b0c5f54546667bdff6d3b9af2b7aea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b0c5f54546667bdff6d3b9af2b7aea2">&#9670;&nbsp;</a></span>Camera_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Détruit une caméra préalablement allouée avec <a class="el" href="group___camera.html#gaa7fe5091d66e78ae40537f5eec6b35a2" title="Crée une caméra.">Camera_new()</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">camera</td><td>la caméra à détruire. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gad8d7c84cf303877b55b9ca54d69de02b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8d7c84cf303877b55b9ca54d69de02b">&#9670;&nbsp;</a></span>Camera_getView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera_getView </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___camera.html#gaa8cadcded7ae946572f5e28afbf373eb">Rect</a> *&#160;</td>
+          <td class="paramname"><em>worldView</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renvoie la zone du monde vue par la caméra. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">camera</td><td>la caméra. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">worldView</td><td>le rectangle vu par la caméra exprimé dans le référentiel monde. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac7ea9638aaeca2eb5d9f70ee5c0a9761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7ea9638aaeca2eb5d9f70ee5c0a9761">&#9670;&nbsp;</a></span>Camera_move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera_move </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a>&#160;</td>
+          <td class="paramname"><em>displacement</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Déplace la caméra. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">camera</td><td>la caméra. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">displacement</td><td>le vecteur de déplacement exprimé dans le référentiel monde. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaa7fe5091d66e78ae40537f5eec6b35a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7fe5091d66e78ae40537f5eec6b35a2">&#9670;&nbsp;</a></span>Camera_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a>* Camera_new </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une caméra. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>la largeur en pixels de la caméra. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>la hauteur en pixels de la caméra. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La caméra ou NULL en cas d'erreur. </dd></dl>
+
+</div>
+</div>
+<a id="gac0888b4b26e7c2c24a8ffb51d3b726a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac0888b4b26e7c2c24a8ffb51d3b726a3">&#9670;&nbsp;</a></span>Camera_setView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera_setView </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___camera.html#gaa8cadcded7ae946572f5e28afbf373eb">Rect</a> *&#160;</td>
+          <td class="paramname"><em>worldView</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définit la zone du monde vue par la caméra. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">camera</td><td>la caméra. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldView</td><td>le rectangle exprimé dans le référentiel monde. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga052b2f94ac46afaa3e28e3e94fe797ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga052b2f94ac46afaa3e28e3e94fe797ba">&#9670;&nbsp;</a></span>Camera_viewToWorld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera_viewToWorld </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a> *&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transforme des coordonnées exprimées dans le référentiel caméra vers le référentiel monde. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">camera</td><td>camera la caméra. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>l'abscisse d'un point dans le référentiel caméra (en pixels). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>l'ordonnée d'un point dans le référentiel caméra (en pixels). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">position</td><td>la position du point dans le référentiel monde. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaf7786bd07f26f8ce46f871205896d577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf7786bd07f26f8ce46f871205896d577">&#9670;&nbsp;</a></span>Camera_worldToView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera_worldToView </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transforme des coordonnées exprimées dans le référentiel monde vers le référentiel caméra. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">camera</td><td>la caméra. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>la position d'un point dans le référentiel monde. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td>l'abscisse du point dans le référentiel caméra (en pixels). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td>l'ordonnée du point dans le référentiel caméra (en pixels). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga2ff2a4ad73db0aa2013b437b4e1749df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ff2a4ad73db0aa2013b437b4e1749df">&#9670;&nbsp;</a></span>Camera_zoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera_zoom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___camera.html#ga276fe42672bb1e37d29c704c231ff44d">Camera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___vector.html#ga7cabff7b1653385388b2c8a580c3a6c1">Vec2</a>&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réduit ou augmente la zone du monde vue par la caméra. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">camera</td><td>la caméra. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">center</td><td>le centre de l'homothétie. Il s'agit du point non modifié par la transformation. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factor</td><td>le facteur de zoom. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac32b1ef3ac3e98ff3b5f83b541d314dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac32b1ef3ac3e98ff3b5f83b541d314dc">&#9670;&nbsp;</a></span>Rect_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___camera.html#gaa8cadcded7ae946572f5e28afbf373eb">Rect</a> Rect_set </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construit un rectangle. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>abscisse du sommet en bas à gauche du rectangle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>ordonnée du sommet en bas à gauche du rectangle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>largeur du rectangle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>hauteur du rectangle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le rectangle spécifié. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

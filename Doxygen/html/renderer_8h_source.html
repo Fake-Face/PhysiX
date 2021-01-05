@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simple physics Engine:  Fichier source de C:/Users/arnau/Documents/Data/Dev/SimplePhysicsEngine_Basecode_Part2/SimplePhysicsEngine/renderer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simple physics Engine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6ff16dbf211f70f9e46f3c182aff425b.html">SimplePhysicsEngine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">renderer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="renderer_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef _RENDERER_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define _RENDERER_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;SDL.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_renderer__s.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_renderer__s.html">Renderer_s</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="group___renderer.html#ga4aec9f76fd8141044f7111a3a762b3e1">   20</a></span>&#160;    SDL_Renderer *<a class="code" href="group___renderer.html#ga4aec9f76fd8141044f7111a3a762b3e1">m_rendererSDL</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="group___renderer.html#ga226b54ebc937470a33ab6d4e01382371">   23</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___renderer.html#ga226b54ebc937470a33ab6d4e01382371">m_width</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="group___renderer.html#gac6a72ba5cf510cdb179f3b1ae815bc65">   26</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___renderer.html#gac6a72ba5cf510cdb179f3b1ae815bc65">m_height</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="group___renderer.html#ga317189feda54d651b955d70141f53eba">   27</a></span>&#160;} <a class="code" href="group___renderer.html#ga317189feda54d651b955d70141f53eba">Renderer</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_color__s.html">   30</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_color__s.html">Color_s</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___renderer.html#ga4c5c6ceb8ed33456261fa907136e0c3a">   33</a></span>&#160;    uint8_t <a class="code" href="group___renderer.html#ga4c5c6ceb8ed33456261fa907136e0c3a">r</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___renderer.html#ga1673907d4d89d763bb7b94ec1eeb7b60">   36</a></span>&#160;    uint8_t <a class="code" href="group___renderer.html#ga1673907d4d89d763bb7b94ec1eeb7b60">g</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___renderer.html#ga4313c9563516f94387762ab05763456b">   39</a></span>&#160;    uint8_t <a class="code" href="group___renderer.html#ga4313c9563516f94387762ab05763456b">b</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___renderer.html#gaf4007aacd75b22aee32dba9ea96082c0">   43</a></span>&#160;    uint8_t <a class="code" href="group___renderer.html#gaf4007aacd75b22aee32dba9ea96082c0">a</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___renderer.html#ga74a2584ae743b8f8404618cd5a44c6a2">   44</a></span>&#160;} <a class="code" href="group___renderer.html#ga74a2584ae743b8f8404618cd5a44c6a2">Color</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="struct_color__s.html">Color</a> <a class="code" href="group___renderer.html#ga09a1a167dd289dfc87d670546b641ee3">Color_set</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> a);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___renderer.html#ga27cfd677c8af1ad5da9fae804827fcf0">Renderer_update</a>(<a class="code" href="struct_renderer__s.html">Renderer</a>* renderer);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___renderer.html#ga6c46601f6840be0c95f31b0bd6a672f1">Renderer_clear</a>(<a class="code" href="struct_renderer__s.html">Renderer</a>* renderer);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___renderer.html#ga77a5fc3b67126f6acc25f5cad944ed66">Renderer_fill</a>(<a class="code" href="struct_renderer__s.html">Renderer</a>* renderer, <a class="code" href="struct_color__s.html">Color</a> color);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___renderer.html#ga5555b9e9ca9f5a1da715d80fd655f06c">Renderer_drawLine</a>(<a class="code" href="struct_renderer__s.html">Renderer</a> *renderer, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2, <a class="code" href="struct_color__s.html">Color</a> color);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___renderer.html#gaa5b342bd12e12970bb8a39e5081c94bf">Renderer_drawPoint</a>(<a class="code" href="struct_renderer__s.html">Renderer</a> *renderer, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <a class="code" href="struct_color__s.html">Color</a> color);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___renderer.html#ga4d702a8417f2b7dc36f8b8f9c4f41395">Renderer_getWidth</a>(<a class="code" href="struct_renderer__s.html">Renderer</a> *renderer);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___renderer.html#ga6b27be55abcc24a0d6d842c6f5a6cfaf">Renderer_getHeight</a>(<a class="code" href="struct_renderer__s.html">Renderer</a> *renderer);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup___renderer_html_ga27cfd677c8af1ad5da9fae804827fcf0"><div class="ttname"><a href="group___renderer.html#ga27cfd677c8af1ad5da9fae804827fcf0">Renderer_update</a></div><div class="ttdeci">void Renderer_update(Renderer *renderer)</div><div class="ttdoc">Met à jour le moteur de rendu. Cette fonction permet de d'afficher à l'écran la dernière image rendue...</div><div class="ttdef"><b>Definition:</b> renderer.c:75</div></div>
+<div class="ttc" id="astruct_color__s_html"><div class="ttname"><a href="struct_color__s.html">Color_s</a></div><div class="ttdoc">Structure représentant une couleur au format RGBA.</div><div class="ttdef"><b>Definition:</b> renderer.h:31</div></div>
+<div class="ttc" id="agroup___renderer_html_ga4c5c6ceb8ed33456261fa907136e0c3a"><div class="ttname"><a href="group___renderer.html#ga4c5c6ceb8ed33456261fa907136e0c3a">Color_s::r</a></div><div class="ttdeci">uint8_t r</div><div class="ttdoc">L'intensité de la composante rouge entre 0 et 255.</div><div class="ttdef"><b>Definition:</b> renderer.h:33</div></div>
+<div class="ttc" id="agroup___renderer_html_ga4313c9563516f94387762ab05763456b"><div class="ttname"><a href="group___renderer.html#ga4313c9563516f94387762ab05763456b">Color_s::b</a></div><div class="ttdeci">uint8_t b</div><div class="ttdoc">L'intensité de la composante bleue entre 0 et 255.</div><div class="ttdef"><b>Definition:</b> renderer.h:39</div></div>
+<div class="ttc" id="agroup___renderer_html_ga74a2584ae743b8f8404618cd5a44c6a2"><div class="ttname"><a href="group___renderer.html#ga74a2584ae743b8f8404618cd5a44c6a2">Color</a></div><div class="ttdeci">struct Color_s Color</div><div class="ttdoc">Structure représentant une couleur au format RGBA.</div></div>
+<div class="ttc" id="agroup___renderer_html_ga1673907d4d89d763bb7b94ec1eeb7b60"><div class="ttname"><a href="group___renderer.html#ga1673907d4d89d763bb7b94ec1eeb7b60">Color_s::g</a></div><div class="ttdeci">uint8_t g</div><div class="ttdoc">L'intensité de la composante verte entre 0 et 255.</div><div class="ttdef"><b>Definition:</b> renderer.h:36</div></div>
+<div class="ttc" id="agroup___renderer_html_gac6a72ba5cf510cdb179f3b1ae815bc65"><div class="ttname"><a href="group___renderer.html#gac6a72ba5cf510cdb179f3b1ae815bc65">Renderer_s::m_height</a></div><div class="ttdeci">int m_height</div><div class="ttdoc">La hauteur en pixels de l'image rendue.</div><div class="ttdef"><b>Definition:</b> renderer.h:26</div></div>
+<div class="ttc" id="agroup___renderer_html_gaf4007aacd75b22aee32dba9ea96082c0"><div class="ttname"><a href="group___renderer.html#gaf4007aacd75b22aee32dba9ea96082c0">Color_s::a</a></div><div class="ttdeci">uint8_t a</div><div class="ttdoc">La composante alpha (transparence) de la couleur. La couleur est parfaitement transparante quand elle...</div><div class="ttdef"><b>Definition:</b> renderer.h:43</div></div>
+<div class="ttc" id="astruct_renderer__s_html"><div class="ttname"><a href="struct_renderer__s.html">Renderer_s</a></div><div class="ttdoc">Structure représentant la moteur de rendu.</div><div class="ttdef"><b>Definition:</b> renderer.h:18</div></div>
+<div class="ttc" id="agroup___renderer_html_ga4aec9f76fd8141044f7111a3a762b3e1"><div class="ttname"><a href="group___renderer.html#ga4aec9f76fd8141044f7111a3a762b3e1">Renderer_s::m_rendererSDL</a></div><div class="ttdeci">SDL_Renderer * m_rendererSDL</div><div class="ttdoc">Le moteur de rendu SDL.</div><div class="ttdef"><b>Definition:</b> renderer.h:20</div></div>
+<div class="ttc" id="agroup___renderer_html_ga4d702a8417f2b7dc36f8b8f9c4f41395"><div class="ttname"><a href="group___renderer.html#ga4d702a8417f2b7dc36f8b8f9c4f41395">Renderer_getWidth</a></div><div class="ttdeci">int Renderer_getWidth(Renderer *renderer)</div><div class="ttdoc">Renvoie la largeur du moteur de rendu.</div><div class="ttdef"><b>Definition:</b> renderer.c:13</div></div>
+<div class="ttc" id="agroup___renderer_html_ga6c46601f6840be0c95f31b0bd6a672f1"><div class="ttname"><a href="group___renderer.html#ga6c46601f6840be0c95f31b0bd6a672f1">Renderer_clear</a></div><div class="ttdeci">void Renderer_clear(Renderer *renderer)</div><div class="ttdoc">Efface le rendu précédent. Le rendu devient entièrement noir.</div><div class="ttdef"><b>Definition:</b> renderer.c:23</div></div>
+<div class="ttc" id="agroup___renderer_html_gaa5b342bd12e12970bb8a39e5081c94bf"><div class="ttname"><a href="group___renderer.html#gaa5b342bd12e12970bb8a39e5081c94bf">Renderer_drawPoint</a></div><div class="ttdeci">void Renderer_drawPoint(Renderer *renderer, int x, int y, Color color)</div><div class="ttdoc">Dessine un point sur le rendu.</div><div class="ttdef"><b>Definition:</b> renderer.c:45</div></div>
+<div class="ttc" id="agroup___renderer_html_ga09a1a167dd289dfc87d670546b641ee3"><div class="ttname"><a href="group___renderer.html#ga09a1a167dd289dfc87d670546b641ee3">Color_set</a></div><div class="ttdeci">Color Color_set(int r, int g, int b, int a)</div><div class="ttdoc">Construit une couleur à partir de ses composantes [R,V,B,A] chacune entre 0 et 255.</div><div class="ttdef"><b>Definition:</b> renderer.c:64</div></div>
+<div class="ttc" id="agroup___renderer_html_ga77a5fc3b67126f6acc25f5cad944ed66"><div class="ttname"><a href="group___renderer.html#ga77a5fc3b67126f6acc25f5cad944ed66">Renderer_fill</a></div><div class="ttdeci">void Renderer_fill(Renderer *renderer, Color color)</div><div class="ttdoc">Remplit le rendu avec une couleur donnée.</div><div class="ttdef"><b>Definition:</b> renderer.c:30</div></div>
+<div class="ttc" id="agroup___renderer_html_ga317189feda54d651b955d70141f53eba"><div class="ttname"><a href="group___renderer.html#ga317189feda54d651b955d70141f53eba">Renderer</a></div><div class="ttdeci">struct Renderer_s Renderer</div><div class="ttdoc">Structure représentant la moteur de rendu.</div></div>
+<div class="ttc" id="agroup___renderer_html_ga5555b9e9ca9f5a1da715d80fd655f06c"><div class="ttname"><a href="group___renderer.html#ga5555b9e9ca9f5a1da715d80fd655f06c">Renderer_drawLine</a></div><div class="ttdeci">void Renderer_drawLine(Renderer *renderer, int x1, int y1, int x2, int y2, Color color)</div><div class="ttdoc">Dessine un segment spécifié par deux points sur le rendu.</div><div class="ttdef"><b>Definition:</b> renderer.c:55</div></div>
+<div class="ttc" id="agroup___renderer_html_ga6b27be55abcc24a0d6d842c6f5a6cfaf"><div class="ttname"><a href="group___renderer.html#ga6b27be55abcc24a0d6d842c6f5a6cfaf">Renderer_getHeight</a></div><div class="ttdeci">int Renderer_getHeight(Renderer *renderer)</div><div class="ttdoc">Renvoie la hauteur du moteur de rendu.</div><div class="ttdef"><b>Definition:</b> renderer.c:18</div></div>
+<div class="ttc" id="agroup___renderer_html_ga226b54ebc937470a33ab6d4e01382371"><div class="ttname"><a href="group___renderer.html#ga226b54ebc937470a33ab6d4e01382371">Renderer_s::m_width</a></div><div class="ttdeci">int m_width</div><div class="ttdoc">La largeur en pixels de l'image rendue.</div><div class="ttdef"><b>Definition:</b> renderer.h:23</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>
