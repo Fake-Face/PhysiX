@@ -35,20 +35,18 @@ int main(int argc, char *argv[])
     int mouseY = 0;
     Vec2 mousePos = Vec2_set(0.f, 0.f);
 
-    // Creation des balles
-    Ball *ball = Scene_addBall(scene, Vec2_set(4.0f, 1.0f));
-    Ball *ball_2 = Scene_addBall(scene, Vec2_set(6.0f, 1.0f));
-    Ball *ball_3 = Scene_addBall(scene, Vec2_set(5.0f, 2.0f));
+//******************************** Creation des la plateforme de base ********************************//
 
-    // Propriétés physique des balles
-    ball->velocity = Vec2_set(0.f, 0.f);
-    ball_2->velocity = Vec2_set(0.f, 0.f);
-    ball_3->velocity = Vec2_set(0.f, 0.f);
+    Ball *ball = Scene_addBall(scene, Vec2_set(7.5f, 1.0f));
+    Ball *ball_2 = Scene_addBall(scene, Vec2_set(8.0f, 1.86f));
+    Ball *ball_3 = Scene_addBall(scene, Vec2_set(8.5f, 1.0f));
 
     // Connexion des balles
     Ball_connect(ball, ball_2, 1);
     Ball_connect(ball_3, ball_2, 1);
     Ball_connect(ball, ball_3, 1);
+
+//****************************************************************************************************//
 
     float timeStep = 1.f / 100.f;
     float accumulator = 0.f;
@@ -57,7 +55,9 @@ int main(int argc, char *argv[])
     int quitLoop = 0;
 
     Vec2 cursor_position;
-    BallQuery neareast_cursor_ball;
+    BallQuery nearest_cursor_balls[2];
+    BallQuery nearest_cursor_ball;
+
     int x, y;
 
     while (!quitLoop)
@@ -66,10 +66,11 @@ int main(int argc, char *argv[])
         SDL_Event evt;
         int mouseClick = 0;
         Timer_update(timer);
+        nearest_cursor_ball = Scene_getNearestBall(scene, cursor_position);
+
 
         while (SDL_PollEvent(&evt))
         {
-
             SDL_Scancode scanCode;
             SDL_MouseButtonEvent mouseButton;
 
@@ -116,10 +117,19 @@ int main(int argc, char *argv[])
                 break;
             }
 
-            if(mouseClick){
-              Ball *ball = Scene_addBall(scene, Vec2_set(mousePos.x, mousePos.y));
-              Ball *neareast_ball = Scene_addBall(scene, Vec2_set(neareast_cursor_ball.ball->position.x, neareast_cursor_ball.ball->position.y));
-              Ball_connect(ball, neareast_cursor_ball.ball, 1);
+            // Action du click gauche
+            if(mouseClick && Vec2_distance(cursor_position, nearest_cursor_ball.ball->position) < 1.f)
+            {
+                // On crée une balle au niveau du curseur
+                Ball *ball = Scene_addBall(scene, Vec2_set(mousePos.x, mousePos.y));
+
+                // Si trop de ressort relié à la balle la plus proche
+                for (int i = 0; i < 2; i++) {
+                    // Si trop de ressort attaché à la balle
+                    if(Ball_connect(ball, nearest_cursor_balls[i].ball, Vec2_distance(cursor_position, nearest_cursor_balls[i].ball->position)))
+                        // Retirer la nouvelle balle
+                        Scene_removeBall(scene, ball);
+                }
             }
         }
 
@@ -132,14 +142,22 @@ int main(int argc, char *argv[])
         // Get the mouse position
         Camera_viewToWorld(camera, mouseX, mouseY, &mousePos);
 
-        // Recupere la position du curseur dans le monde
+        // Recupère la position du curseur dans le monde
         cursor_position.x = mousePos.x;
         cursor_position.y = mousePos.y;
 
-        // Recupere la balle la plus proche du curseur
-        neareast_cursor_ball = Scene_getNearestBall(scene, cursor_position);
-        // Transforme les coordonnées de la balle de metres vers pixels
-        Camera_worldToView(camera, neareast_cursor_ball.ball->position, &x, &y);
+        // Récupère les n balles les plus proche du curseur
+        Scene_getNearestBalls(scene, cursor_position, nearest_cursor_balls, 2);
+
+        for (int i = 0; i < 2; i++)
+        {
+            // Transforme les coordonnées des balles les plus proches en pixels
+            Camera_worldToView(camera, nearest_cursor_balls[i].ball->position, &x, &y);
+
+            // Dessine une ligne entre le curseur et les balles les plus proches
+            if(Vec2_distance(cursor_position, nearest_cursor_ball.ball->position) < 1.f) // Bonus de proposition de balles les plus proches
+                Renderer_drawLine(renderer, mouseX, mouseY, x, y, Color_set(255, 221, 51, 255));
+        }
 
         // Update the physics engine
         accumulator += Timer_getDelta(timer);
@@ -147,10 +165,9 @@ int main(int argc, char *argv[])
         {
             Scene_updateBalls(scene, timeStep);
             accumulator -= timeStep;
-        }
+            }
 
         // Render the scene
-        Renderer_drawLine(renderer, mouseX, mouseY, x, y, Color_set(255, 255, 255, 255));
         Scene_renderBalls(scene);
         Renderer_update(renderer);
     }
@@ -170,12 +187,11 @@ int main(int argc, char *argv[])
 
     return EXIT_SUCCESS;
 
-    ERROR_LABEL:
+ERROR_LABEL:
     printf("ERROR - main()\n");
     Window_free(window);
     Scene_free(scene);
     Timer_free(timer);
 
     SDL_quit();
-    return EXIT_FAILURE;
 }
