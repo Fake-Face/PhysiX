@@ -1,4 +1,3 @@
-﻿
 #ifndef _RENDERER_H_
 #define _RENDERER_H_
 
@@ -21,7 +20,7 @@ typedef struct Renderer_s
 
     /// @brief La largeur en pixels de l'image rendue.
     int m_width;
-    
+
     /// @brief La hauteur en pixels de l'image rendue.
     int m_height;
 } Renderer;
