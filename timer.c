@@ -1,4 +1,3 @@
-﻿
 #include "timer.h"
 
 #ifdef _WIN32
