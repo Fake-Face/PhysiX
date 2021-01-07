@@ -1,4 +1,3 @@
-﻿
 #include "renderer.h"
 
 #ifdef _WIN32
