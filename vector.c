@@ -6,25 +6,41 @@
 
 Vec2 Vec2_set(float x, float y)
 {
-    Vec2 v = { .x = x, .y = y };
+    // Vec2 v = { .x = x, .y = y };
+
+    Vec2 v;
+    v.x = x;
+    v.y = y;
     return v;
 }
 
 Vec2 Vec2_add(Vec2 v1, Vec2 v2)
 {
-    Vec2 v = { .x = v1.x + v2.x, .y = v1.y + v2.y};
+    // Vec2 v = { .x = v1.x + v2.x, .y = v1.y + v2.y};
+
+    Vec2 v;
+    v.x = v1.x + v2.x;
+    v.y = v1.y + v2.y;
     return v;
 }
 
 Vec2 Vec2_sub(Vec2 v1, Vec2 v2)
 {
-    Vec2 v = { .x = v1.x - v2.x, .y = v1.y - v2.y};
+    // Vec2 v = { .x = v1.x - v2.x, .y = v1.y - v2.y};
+
+    Vec2 v;
+    v.x = v1.x - v2.x;
+    v.y = v1.y - v2.y;
     return v;
 }
 
 Vec2 Vec2_scale(Vec2 v1, float s)
 {
-    Vec2 v = {.x = v1.x * s, .y = v1.y * s};
+    // Vec2 v = {.x = v1.x * s, .y = v1.y * s};
+
+    Vec2 v;
+    v.x = v1.x * s;
+    v.y = v1.y * s;
     return v;
 }
 
@@ -36,7 +52,11 @@ float Vec2_norm(Vec2 v1)
 
 Vec2 Vec2_normalize(Vec2 v)
 {
-    Vec2 vn = {v.x/Vec2_norm(v), v.y/Vec2_norm(v)};
+    // Vec2 vn = {v.x/Vec2_norm(v), v.y/Vec2_norm(v)};
+
+    Vec2 vn;
+    vn.x = v.x/Vec2_norm(v);
+    vn.y = v.y/Vec2_norm(v);
     return vn;
 }
 
