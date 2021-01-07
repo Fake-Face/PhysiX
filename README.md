@@ -14,9 +14,9 @@ The file "physics.bin" is compiled for Linux so if you want to play the game, yo
 
 First of all you'll need to install SDL2, open a terminal and write this :
 
-[1] sudo apt-get update
-[2] sudo apt-get upgrade
-[3] sudo apt-get install libsdl2-dev
+1) sudo apt-get update
+2) sudo apt-get upgrade
+3) sudo apt-get install libsdl2-dev
 
 To compile open a terminal in the same folder where you have put all the game files :
 
