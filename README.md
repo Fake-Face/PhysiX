@@ -6,3 +6,5 @@ If you want to customize the game, run the file "index.html" in the repistories 
 The file "physics.bin" is compiled for Linux so if you want to play the game, you need to open a terminal and write this command in the current repistory : ./physics.bin
 
 // SOME INFOS ABOUT DOC SOON //
+
+Some implementation for the game will be pushed soon :)
