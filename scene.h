@@ -1,4 +1,3 @@
-﻿
 #ifndef _SCENE_H_
 #define _SCENE_H_
 
@@ -9,6 +8,8 @@
 #include "physics.h"
 #include "renderer.h"
 #include "camera.h"
+
+#include <stdbool.h>
 
 /// @brief Structure représentant la scène de la simulation.
 /// Elle contient la caméra par laquelle la scène est vue ainsi que toutes les balles.
