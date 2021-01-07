@@ -1,4 +1,4 @@
-﻿
+
 #ifndef _EX_CAMERA_H_
 #define _EX_CAMERA_H_
 
@@ -75,7 +75,7 @@ void Camera_zoom(Camera *camera, Vec2 center, float factor);
 /// @param[in] position la position d'un point dans le référentiel monde.
 /// @param[out] x l'abscisse du point dans le référentiel caméra (en pixels).
 /// @param[out] y l'ordonnée du point dans le référentiel caméra (en pixels).
-void Camera_worldToView(Camera *camera, Vec2 position, int *x, int *y);
+void Camera_worldToView(Camera *camera, Vec2 position, int* x, int* y);
 
 /// @brief Transforme des coordonnées exprimées dans le référentiel caméra vers le référentiel monde.
 /// @param[in] camera camera la caméra.
