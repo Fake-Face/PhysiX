@@ -8,6 +8,12 @@
 #include "camera.h"
 
 int Scene_doubleCapacity(Scene *scene);
+int cmp(const void *a, const void *b);
+struct array_index
+{
+  float value;
+  int index;
+};
 
 Scene *Scene_new(Renderer *renderer)
 {
@@ -77,7 +83,7 @@ int Scene_doubleCapacity(Scene *scene)
 
     return EXIT_SUCCESS;
 
-ERROR_LABEL:
+    ERROR_LABEL:
     printf("ERROR - Scene_doubleCapacity()\n");
     return EXIT_FAILURE;
 }
@@ -99,7 +105,7 @@ Ball *Scene_addBall(Scene *scene, Vec2 position)
 
     return ball;
 
-ERROR_LABEL:
+    ERROR_LABEL:
     printf("ERROR - Scene_addBall()\n");
     return NULL;
 }
@@ -159,19 +165,21 @@ BallQuery Scene_getNearestBall(Scene *scene, Vec2 position)
     Ball *balls = Scene_getBalls(scene); // Tableau contenant les balles presentent sur la scene
     BallQuery query = { 0 };
     float minimal_distance = 1000.f, distance_from_cursor;
-;
 
-    // TODO - Complétez la fonction
     // Pour chaque balles dans la scene
-    for(int i = 0; i < nbBalls; i++){
-      distance_from_cursor = Vec2_distance(balls[i].position, position);
+    for(int i = 0; i < nbBalls; i++)
+    {
+        distance_from_cursor = Vec2_distance(balls[i].position, position);
 
-      if(distance_from_cursor < minimal_distance){
-        minimal_distance = distance_from_cursor;
-        query.ball = &balls[i]; // Pointe vers la balle la plus proche du curseur dans le tableau de balles
-        query.distance = distance_from_cursor; // Stocke la distance de la balle par rapport au curseur
-      }
+        // Si la distance de la balle est inferieur à la distance minimale trouvé
+        if(distance_from_cursor < minimal_distance)
+        {
+            minimal_distance = distance_from_cursor;
+            query.ball = &balls[i]; // Pointe vers la balle la plus proche du curseur dans le tableau de balles
+            query.distance = distance_from_cursor; // Stocke la distance de la balle par rapport au curseur
+        }
     }
+
     return query;
 }
 
@@ -179,10 +187,41 @@ int Scene_getNearestBalls(Scene *scene, Vec2 position, BallQuery *queries, int n
 {
     int nbBalls = Scene_getNbBalls(scene);
     Ball *balls = Scene_getBalls(scene);
+    struct array_index array[nbBalls];
 
-    // TODO - Complétez la fonction
+    // Tableau contenant la distance de chaque balle par rapport au curseur
+    float *distances_from_cursor = malloc(nbBalls * sizeof(float));
 
-    return EXIT_SUCCESS;
+    for (int i = 0; i < nbBalls; i++)
+    {
+        //Calcul la distance de chaque balle par rapport au curseur
+        distances_from_cursor[i] = Vec2_distance(position, balls[i].position);
+    }
+
+   for(int i=0; i < nbBalls; i++){
+       array[i].value = distances_from_cursor[i];
+       array[i].index = i ;
+   }
+
+   qsort(array, nbBalls, sizeof(array[0]), cmp);
+
+   for(int i = 0; i < nbQueries; i++){
+       queries[i].ball = &balls[array[i].index];
+   }
+return EXIT_SUCCESS;
+}
+
+// Pour la fonction qsort
+int cmp(const void *a, const void *b)
+{
+    struct array_index *a1 = (struct array_index *)a;
+    struct array_index *a2 = (struct array_index *)b;
+    if ((*a1).value < (*a2).value)
+        return -1;
+    else if ((*a1).value > (*a2).value)
+        return 1;
+    else
+        return 0;
 }
 
 void Scene_updateBalls(Scene *scene, float timeStep)
@@ -194,6 +233,7 @@ void Scene_updateBalls(Scene *scene, float timeStep)
     {
         Ball_updateVelocity(&balls[i], timeStep);
     }
+
     for (int i = 0; i < nbBalls; i++)
     {
         Ball_updatePosition(&balls[i], timeStep);
@@ -220,7 +260,7 @@ void Scene_renderBalls(Scene *scene)
             int x2, y2;
 
             Camera_worldToView(camera, other->position, &x2, &y2);
-            Renderer_drawLine(renderer, x1, y1, x2, y2, Color_set(255, 255, 255, 255));
+            Renderer_drawLine(renderer, x1, y1, x2, y2, Color_set(105, 220, 255, 255));
         }
 
         Renderer_drawPoint(renderer, x1, y1, Color_set(255, 128, 128, 255));
