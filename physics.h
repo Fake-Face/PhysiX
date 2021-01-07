@@ -1,4 +1,4 @@
-﻿#ifndef _PHYSICS_H_
+#ifndef _PHYSICS_H_
 #define _PHYSICS_H_
 
 /// @file physics.h
@@ -8,6 +8,7 @@
 #define MAX_EDGES 10
 
 #include "vector.h"
+#include <stdbool.h>
 
 typedef struct Ball_s Ball;
 
@@ -41,6 +42,9 @@ struct Ball_s
 
     /// @brief Tableau contenant les ressorts attachés à la balle.
     Spring springs[MAX_EDGES];
+
+    /* /// @brief Permet de définir si la balle est fixe ou non.
+    bool is_static; */
 };
 
 /// @brief Initialise une balle et permet de définir sa position.
